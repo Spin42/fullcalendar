@@ -1,5 +1,8 @@
 dist
-
+build/out
+build/archive
+build/bower
+build/cdnjs
 # npm modules
 node_modules
 

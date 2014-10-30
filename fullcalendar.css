@@ -586,4 +586,11 @@ table.fc-border-separate {
 	_overflow: hidden;
 	}
 	
-	
+.fc-day {
+	height: 60px;
+}
+
+.fc-day-number {
+	color: grey;
+	font-size: 0.8em;
+}
