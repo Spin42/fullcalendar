@@ -29,7 +29,7 @@ function PlanView(element, calendar) {
 
     var start = addDays(cloneDate(date, true), - weeksOffset * 7);
 
-    var end = addDays(cloneDate(start), weeksOffset * 7);
+    var end = addDays(cloneDate(date), weeksOffset * 7);
 
     var visStart = cloneDate(start);
     addDays(visStart, -((visStart.getDay() - firstDay + 7) % 7));

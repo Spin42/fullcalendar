@@ -254,7 +254,7 @@ function BasicView(element, calendar, viewName) {
 			contentClass
 		];
 
-		if (date.getMonth() != month) {
+		if (viewName != 'plan' && date.getMonth() != month) {
 			classNames.push('fc-other-month');
 		}
 		if (+date == +today) {
@@ -278,7 +278,8 @@ function BasicView(element, calendar, viewName) {
 			"<div>";
 
 		if (showNumbers) {
-			html += "<div class='fc-day-number'>" + formatDate(date, 'MMM DD') + "</div>";
+			var formattedDate = viewName === 'plan' ? formatDate(date, 'MMM dd') : date.getDay();
+			html += "<div class='fc-day-number'>" + formattedDate + "</div>";
 		}
 
 		html +=
