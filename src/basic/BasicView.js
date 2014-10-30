@@ -278,7 +278,7 @@ function BasicView(element, calendar, viewName) {
 			"<div>";
 
 		if (showNumbers) {
-			html += "<div class='fc-day-number'>" + date.getDate() + "</div>";
+			html += "<div class='fc-day-number'>" + formatDate(date, 'MMM DD') + "</div>";
 		}
 
 		html +=

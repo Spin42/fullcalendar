@@ -3,6 +3,7 @@ var defaults = {
 
 	// display
 	defaultView: 'month',
+	weeksOffset: 4,
 	aspectRatio: 1.35,
 	header: {
 		left: 'title',
@@ -30,11 +31,13 @@ var defaults = {
 	// time formats
 	titleFormat: {
 		month: 'MMMM yyyy',
+		plan: 'MMMM yyyy',
 		week: "MMM d[ yyyy]{ '&#8212;'[ MMM] d yyyy}",
 		day: 'dddd, MMM d, yyyy'
 	},
 	columnFormat: {
 		month: 'ddd',
+		plan: 'ddd',
 		week: 'ddd M/d',
 		day: 'dddd M/d'
 	},
